@@ -1,3 +1,9 @@
+# MyBlog
+
+The code for this repository is for studies only, content used in the Laravel Express course of Code Education.
+In this course was used as the basis version 5.1 of the Laravel framework.
+
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
