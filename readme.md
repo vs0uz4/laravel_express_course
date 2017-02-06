@@ -1,7 +1,12 @@
 # MyBlog
 
 The code for this repository is for studies only, content used in the Laravel Express course of Code Education.
-In this course was used as the basis version 5.1 of the Laravel framework.
+In this course was used as the version 5.1 of the Laravel framework.
+
+Other technologies involved:
+
+- SASS;
+- Bootstrap;
 
 
 ## Laravel PHP Framework
