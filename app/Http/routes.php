@@ -21,3 +21,4 @@ Route::get('/contact',  'Pages\ContactController@index');
 /*
  * Routes for administrative panel of blog
  */
+Route::get('/panel',        'Panel\DashboardController@index');
