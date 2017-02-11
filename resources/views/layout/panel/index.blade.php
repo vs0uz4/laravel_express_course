@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="blog panel dashboard for course of laravel">
     <meta name="author" content="vS0uz4">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/favicon.ico">
 
     <title>@yield('title')</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="/css/dashboard.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -54,22 +54,10 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="/panel/posts">Posts <span class="sr-only">(current)</span></a></li>
                 <li><a href="#">Reports</a></li>
                 <li><a href="#">Analytics</a></li>
                 <li><a href="#">Export</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-                <li><a href="">Nav item</a></li>
-                <li><a href="">Nav item again</a></li>
-                <li><a href="">One more nav</a></li>
-                <li><a href="">Another nav item</a></li>
-                <li><a href="">More navigation</a></li>
-            </ul>
-            <ul class="nav nav-sidebar">
-                <li><a href="">Nav item again</a></li>
-                <li><a href="">One more nav</a></li>
-                <li><a href="">Another nav item</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -80,13 +68,13 @@
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="vendor/jquery/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/vendor/jquery/jquery.min.js"><\/script>')</script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/js/ie10-viewport-bug-workaround.js"></script>
 
 <!-- Panel Views's JavaScript -->
 @yield('views_scripts')
