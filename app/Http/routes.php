@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/',         'HomeController@index');
-Route::get('/about',    'AboutController@index');
-Route::get('/contact',  'ContactController@index');
+/*
+ * Routes for pages of blog
+ */
+Route::get('/',         'Pages\HomeController@index');
+Route::get('/about',    'Pages\AboutController@index');
+Route::get('/contact',  'Pages\ContactController@index');
+
+/*
+ * Routes for administrative panel of blog
+ */

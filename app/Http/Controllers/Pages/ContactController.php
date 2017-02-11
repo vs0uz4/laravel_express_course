@@ -1,13 +1,13 @@
 <?php
 
-namespace MyBlog\Http\Controllers;
+namespace MyBlog\Http\Controllers\Pages;
 
 use Illuminate\Http\Request;
 
 use MyBlog\Http\Requests;
 use MyBlog\Http\Controllers\Controller;
 
-class AboutController extends Controller
+class ContactController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +16,7 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('pages.about.index');
+        return view('pages.contact.index');
     }
 
 }
