@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="blog sample for course of laravel">
     <meta name="author" content="vS0uz4">
+    <link rel="icon" href="favicon.ico">
 
     <title>@yield('title')</title>
 
@@ -101,5 +102,4 @@
 <script src="js/clean-blog.min.js"></script>
 
 </body>
-
 </html>
