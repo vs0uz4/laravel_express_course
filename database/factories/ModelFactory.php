@@ -11,11 +11,27 @@
 |
 */
 
+use MyBlog\User;
+
 $factory->define(MyBlog\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->safeEmail,
         'password' => bcrypt(str_random(10)),
         'remember_token' => str_random(10),
+    ];
+});
+
+$factory->define(MyBlog\Post::class, function (Faker\Generator $faker) {
+    return [
+        'title' => $faker->sentence,
+        'content' => $faker->paragraph,
+        'author_id' => 1,
+    ];
+});
+
+$factory->define(MyBlog\Tag::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->word,
     ];
 });
