@@ -1,4 +1,4 @@
-@extends('layout.site')
+@extends('layout.blog.index')
 
 @section('title')
 myBlog - Home
