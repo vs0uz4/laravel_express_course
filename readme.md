@@ -3,13 +3,25 @@
 The code for this repository is for studies only, content used in the Laravel Express course of Code Education.
 In this course was used as the version 5.1 of the Laravel framework.
 
-Other technologies involved:
+Other technologies, tools and plugins involved:
 
 - SASS;
 - Bootstrap;
+- Bootstrap Tags Input (jqueryPlugin);
+- Toastr (Javascript Library);
+- Laravel Debugbar;
+- Laravel Collective (html & forms);
+- Doctrine DBAL.
 
+## Referências
 
-## Laravel PHP Framework
+- Bootstrap Tags Input (https://github.com/bootstrap-tagsinput/bootstrap-tagsinput);
+- Toastr (https://github.com/CodeSeven/toastr);
+- Laravel Debugbar (https://github.com/barryvdh/laravel-debugbar)
+- Laravel Collective (https://laravelcollective.com/docs/5.1/html);
+- Doctrine DBAL (https://github.com/doctrine/dbal);
+
+## Laravel PHP Framework 5.1
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
