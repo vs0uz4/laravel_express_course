@@ -16,10 +16,12 @@ class CreateCommentsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email');
-            $table->text('comment');
+            $table->text('content');
 
             $table->integer('post_id')->unsigned();
             $table->foreign('post_id')->references('id')->on('posts');
+
+            $table->boolean('confirmed')->default('false');
 
             $table->timestamps();
         });

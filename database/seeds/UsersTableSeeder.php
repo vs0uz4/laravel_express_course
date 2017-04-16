@@ -27,6 +27,6 @@ class UsersTableSeeder extends Seeder
         /*
          * Creating fake users
          */
-        factory(User::class, 3)->create();
+        factory(User::class, 9)->create();
     }
 }

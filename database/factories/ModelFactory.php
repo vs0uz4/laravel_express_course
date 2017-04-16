@@ -36,3 +36,13 @@ $factory->define(MyBlog\Tag::class, function (Faker\Generator $faker) {
         'name' => $faker->word,
     ];
 });
+
+$factory->define(MyBlog\Comment::class, function (Faker\Generator $faker) {
+    return [
+        'name' => $faker->firstName . ' ' . $faker->lastName,
+        'email' => $faker->safeEmail,
+        'content' => $faker->paragraph,
+        'confirmed' => false,
+        'post_id' => $faker->numberBetween(1, 15),
+    ];
+});

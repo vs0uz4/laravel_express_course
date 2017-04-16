@@ -2,6 +2,7 @@
 
 namespace MyBlog;
 
+use Carbon\Carbon;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
@@ -39,5 +40,13 @@ class User extends Model implements AuthenticatableContract,
 
     public function posts(){
         return $this->hasMany('MyBlog\Post','author_id', 'id');
+    }
+
+    public function getCreatedAtAttribute($value){
+        return Carbon::parse($value)->diffForHumans();
+    }
+
+    public function getUpdatedAtAttribute($value){
+        return Carbon::parse($value)->diffForHumans();
     }
 }

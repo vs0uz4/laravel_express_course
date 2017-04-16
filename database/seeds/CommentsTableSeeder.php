@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use MyBlog\Post;
+use MyBlog\Comment;
 
-class PostsTableSeeder extends Seeder
+class CommentsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,11 +12,11 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        Post::truncate();
+        Comment::truncate();
 
         /*
          * Creating fake posts
          */
-        factory(Post::class, 15)->create();
+        factory(Comment::class, 30)->create();
     }
 }
