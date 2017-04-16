@@ -26,13 +26,29 @@ myBlog - Home
         <div class="post-preview">
             <a href="#">
                 <h2 class="post-title">
-                    {{ $post['title'] }}
+                    {{ $post->title }}
                 </h2>
                 <h3 class="post-subtitle">
-                    {{ $post['body_resume'] }}
+                    {{ str_limit($post->content, 140, '...') }}
                 </h3>
             </a>
-            <p class="post-meta">Posted by <a href="#">{{ $post['author'] }}</a> on {{ $post['public_date'] }}</p>
+            <p class="post-meta">
+                <span class="fa fa-clock-o fa-fw"></span> Posted by <a href="#">{{ $post->author->nickname }}</a> {{ $post->created_at }}
+                @if(count($post->comments)>0)
+                    <span class="fa fa-comments fa-fw"></span> {{ (count($post->comments)>1) ? count($post->comments) . ' comments' : count($post->comments) . ' comment' }}
+                @else
+                    <span class="fa fa-comments fa-fw"></span> no comments.
+                @endif
+            </p>
+            @if(count($post->tags)>0)
+                <p class="post-tags">
+                    <span class="fa fa-tags fa-fw"></span> {{ $post->tagList }}
+                </p>
+            @else
+                <p class="post-tags">
+                    <span class="fa fa-tags fa-fw"></span> no tags.
+                </p>
+            @endif
         </div>
         <hr>
     @endforeach
