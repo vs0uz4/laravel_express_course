@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="blog panel dashboard for course of laravel">
     <meta name="author" content="vS0uz4">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="/favicon.ico">
 
     <title>@yield('title')</title>
@@ -16,6 +17,9 @@
 
     <!-- Theme CSS -->
     <link href="/css/dashboard.css" rel="stylesheet">
+
+    <!-- Panel Views's Styles -->
+    @yield('views_styles')
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -42,9 +46,12 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/panel">Dashboard</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="/panel"><i class="glyphicon glyphicon-dashboard"></i> Dashboard</a></li>
+                <li><a href="/panel/posts"><i class="glyphicon glyphicon-duplicate"></i> Posts</a></li>
+                <li><a href="/panel/comments"><i class="glyphicon glyphicon-comment"></i> Comments</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Users</a></li>
+                <li class="nav-divider"></li>
+                <li><a href="#"><i class="glyphicon glyphicon-cog"></i> Profile</a></li>
             </ul>
         </div>
     </div>
@@ -54,10 +61,10 @@
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
-                <li class="active"><a href="/panel/posts">Posts <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Reports</a></li>
-                <li><a href="#">Analytics</a></li>
-                <li><a href="#">Export</a></li>
+                <li class="active"><a href="/panel"><i class="glyphicon glyphicon-dashboard"></i> Dashboard <span class="sr-only">(current)</span></a></li>
+                <li><a href="/panel/posts"><i class="glyphicon glyphicon-duplicate"></i> Posts</a></li>
+                <li><a href="/panel/comments"><i class="glyphicon glyphicon-comment"></i> Comments</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Users</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -75,6 +82,19 @@
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- Token meta-tag -->
+<script>
+    (function ($) {
+        "use strict";
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    })(window.jQuery);
+</script>
 
 <!-- Panel Views's JavaScript -->
 @yield('views_scripts')
