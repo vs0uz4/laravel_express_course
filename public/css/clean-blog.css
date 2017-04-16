@@ -215,6 +215,9 @@ hr.small {
     font-size: 30px;
   }
 }
+.post-preview > p {
+  margin: 0;
+}
 .post-preview > a {
   color: #333333;
 }
@@ -238,6 +241,12 @@ hr.small {
   font-size: 18px;
   font-style: italic;
   margin-top: 0;
+}
+.post-preview > .post-tags {
+  color: #777777;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
@@ -397,4 +406,12 @@ img::-moz-selection {
 }
 body {
   -webkit-tap-highlight-color: #0085A1;
+}
+
+/*
+ * Customization for Glyph Icon Font
+ */
+.glyphicon-fw {
+  width: 2.28571429em;
+  text-align: center;
 }

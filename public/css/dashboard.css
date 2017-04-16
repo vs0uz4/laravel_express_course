@@ -103,3 +103,29 @@ body {
     display: inline-block;
     border-radius: 50%;
 }
+
+/*
+ * Textarea resize classes
+ */
+.textarea-resize-vertical {
+    resize: vertical;
+}
+
+.textarea-resize-horizontal {
+    resize: horizontal;
+}
+
+.textarea-no-resize {
+    resize: none;
+}
+
+/*
+ * Tables custumizations
+ */
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.table > tbody > tr > td > form {
+    padding: 5px;
+}
