@@ -13,7 +13,7 @@ Other technologies, tools and plugins involved:
 - Laravel Collective (html & forms);
 - Doctrine DBAL.
 
-## Referências
+## References
 
 - Sass (http://sass-lang.com/guide);
 - Bootstrap (http://getbootstrap.com/getting-started);
