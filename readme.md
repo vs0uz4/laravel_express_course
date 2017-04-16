@@ -5,7 +5,7 @@ In this course was used as the version 5.1 of the Laravel framework.
 
 Other technologies, tools and plugins involved:
 
-- SASS;
+- Sass;
 - Bootstrap;
 - Bootstrap Tags Input (jqueryPlugin);
 - Toastr (Javascript Library);
@@ -15,6 +15,8 @@ Other technologies, tools and plugins involved:
 
 ## Referências
 
+- Sass (http://sass-lang.com/guide);
+- Bootstrap (http://getbootstrap.com/getting-started);
 - Bootstrap Tags Input (https://github.com/bootstrap-tagsinput/bootstrap-tagsinput);
 - Toastr (https://github.com/CodeSeven/toastr);
 - Laravel Debugbar (https://github.com/barryvdh/laravel-debugbar)
